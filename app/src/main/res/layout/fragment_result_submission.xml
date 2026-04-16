@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/mist_blue"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Data"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/navy_main"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:layout_marginBottom="32dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Proposal:"
+                android:textSize="12sp"
+                android:textColor="@color/electric_blue"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:id="@+id/tvResultJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul akan tampil di sini"
+                android:textSize="18sp"
+                android:textColor="@color/navy_main"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/plus_jakarta_sans_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Solusi:"
+                android:textSize="12sp"
+                android:textColor="@color/electric_blue"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:id="@+id/tvResultDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi akan tampil di sini"
+                android:textSize="14sp"
+                android:textColor="@color/near_black"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link Referensi:"
+                android:textSize="12sp"
+                android:textColor="@color/electric_blue"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <TextView
+                android:id="@+id/tvResultLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link akan tampil di sini"
+                android:textSize="14sp"
+                android:textColor="@color/true_blue"
+                android:fontFamily="@font/poppins_regular"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali ke Beranda"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/navy_main"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

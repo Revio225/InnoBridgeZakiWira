@@ -10,47 +10,20 @@ import com.example.innobridge.R
 
 class DetailFragment : Fragment(R.layout.fragment_detail) {
 
-    companion object {
-        fun newInstance(
-            judul: String,
-            perusahaan: String,
-            kategori: String,
-            deskripsi: String
-        ): DetailFragment {
-
-            val fragment = DetailFragment()
-            val bundle = Bundle()
-            bundle.putString("judul", judul)
-            bundle.putString("perusahaan", perusahaan)
-            bundle.putString("kategori", kategori)
-            bundle.putString("deskripsi", deskripsi)
-
-            fragment.arguments = bundle
-            return fragment
-        }
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val tvJudul: TextView = view.findViewById(R.id.tvJudul)
-        val tvPerusahaan: TextView = view.findViewById(R.id.tvPerusahaan)
-        val tvKategori: TextView = view.findViewById(R.id.tvKategori)
-        val tvDeskripsi: TextView = view.findViewById(R.id.tvDeskripsi)
+        // Data dummy untuk detail (bisa dikirim lewat bundle dari Beranda)
+        val tvJudul = view.findViewById<TextView>(R.id.tvJudul)
+        val tvPerusahaan = view.findViewById<TextView>(R.id.tvPerusahaan)
+        val tvDeskripsi = view.findViewById<TextView>(R.id.tvDeskripsi)
+        val btnKirim = view.findViewById<Button>(R.id.btnKirimProposal)
 
-        // Ambil data dari Bundle
-        val judul = arguments?.getString("judul")
-        val perusahaan = arguments?.getString("perusahaan")
-        val kategori = arguments?.getString("kategori")
-        val deskripsi = arguments?.getString("deskripsi")
+        tvJudul.text = "Smart Waste Management"
+        tvPerusahaan.text = "PT EcoTech"
+        tvDeskripsi.text = "Tantangan ini mencari solusi inovatif untuk pengelolaan sampah di area perkotaan menggunakan teknologi IoT dan integrasi aplikasi mobile untuk masyarakat."
 
-        tvJudul.text = judul
-        tvPerusahaan.text = perusahaan
-        tvKategori.text = kategori
-        tvDeskripsi.text = deskripsi
-
-        val btnKirimProposal: Button = view.findViewById(R.id.btnKirimProposal)
-        btnKirimProposal.setOnClickListener {
+        btnKirim.setOnClickListener {
             findNavController().navigate(R.id.action_detailFragment_to_submissionFragment)
         }
     }

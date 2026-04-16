@@ -121,7 +121,17 @@
         android:id="@+id/submissionFragment"
         android:name="com.example.innobridge.mahasiswa.SubmissionFragment"
         android:label="Kirim Solusi"
-        tools:layout="@layout/fragment_submission" />
+        tools:layout="@layout/fragment_submission">
+        <action
+            android:id="@+id/action_submissionFragment_to_resultSubmissionFragment"
+            app:destination="@id/resultSubmissionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultSubmissionFragment"
+        android:name="com.example.innobridge.mahasiswa.ResultSubmissionFragment"
+        android:label="Konfirmasi Solusi"
+        tools:layout="@layout/fragment_result_submission" />
 
     <!-- Perusahaan Flow -->
     <fragment
