@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/mist_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Proposal"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/navy_main"
+            android:fontFamily="@font/plus_jakarta_sans_bold" />
+
+        <!-- Input Judul -->
+        <EditText
+            android:id="@+id/etJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Proposal"
+            android:background="@drawable/bg_input_white"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Input Deskripsi -->
+        <EditText
+            android:id="@+id/etDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Deskripsi Solusi"
+            android:gravity="top"
+            android:background="@drawable/bg_input_white"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Input Link -->
+        <EditText
+            android:id="@+id/etLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Link (Drive / GitHub / Video)"
+            android:background="@drawable/bg_input_white"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Button Submit -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Proposal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/true_blue"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

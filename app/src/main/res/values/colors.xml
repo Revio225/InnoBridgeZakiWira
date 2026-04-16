@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#212121</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="navy_main">#042E7B</color>
+    <color name="true_blue">#004EE0</color>
+    <color name="electric_blue">#1883FF</color>
+    <color name="sky_blue">#99CAFF</color>
+    <color name="mist_blue">#E3F2FF</color>
+    <color name="near_black">#212121</color>
+</resources>

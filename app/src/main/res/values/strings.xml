@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- APP -->
+    <string name="app_name">InnoBridge</string>
+
+    <!-- LOGIN -->
+    <string name="login">Login</string>
+    <string name="register">Daftar</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_success">Login Berhasil sebagai %1$s</string>
+    <string name="login_failed">Isi semua field!</string>
+
+    <!-- REGISTRASI -->
+    <string name="nama">Nama</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="registrasi_success">Registrasi Berhasil</string>
+    <string name="registrasi_failed">Semua field wajib diisi!</string>
+
+    <!-- BERANDA -->
+    <string name="halo_innovators">Halo, Innovators!</string>
+    <string name="tagline">Temukan tantangan industri hari ini</string>
+
+    <!-- CHALLENGE -->
+    <string name="kategori_lingkungan">Lingkungan</string>
+    <string name="kategori_it">IT</string>
+    <string name="kategori_energi">Energi</string>
+
+    <!-- DETAIL -->
+    <string name="judul">Judul Challenge</string>
+    <string name="perusahaan">Nama Perusahaan</string>
+    <string name="deskripsi">Deskripsi lengkap challenge</string>
+
+    <!-- POST CHALLENGE -->
+    <string name="judul_challenge">Judul Challenge</string>
+    <string name="kategori_sdg">Kategori SDGs</string>
+    <string name="deadline">Deadline</string>
+    <string name="deskripsi_masalah">Deskripsi Masalah</string>
+    <string name="post_challenge">Post Challenge</string>
+    <string name="field_kosong">Semua field harus diisi!</string>
+    <string name="post_success">Challenge berhasil dipost!</string>
+
+    <!-- PROPOSAL -->
+    <string name="nama_mahasiswa">Mahasiswa Inovator %1$d</string>
+
+    <string name="proposal_1">Solusi AI untuk SDGs 9</string>
+    <string name="proposal_2">Sistem Monitoring Air Bersih</string>
+    <string name="proposal_3">Inovasi Energi Terbarukan</string>
+    <string name="proposal_4">Platform Kolaborasi Lintas Disiplin</string>
+    <string name="proposal_5">Manajemen Limbah Digital</string>
+
+</resources>
